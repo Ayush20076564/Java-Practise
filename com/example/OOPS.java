@@ -17,6 +17,19 @@ class Student {
     int age;
     int rollno;
 
+    public void printInfo( String name){
+        System.out.println(name);           
+    }
+
+    public void printInfo( int age){
+        System.out.println(age);           
+    }
+
+    public void printInfo( int age, String name){
+        System.out.println(name); 
+        System.out.println(age);           
+    }
+
     public void PrintName() {
         System.out.println(this.name);
         System.out.println(this.age);
@@ -55,6 +68,8 @@ public class OOPS {
 
         s1.PrintName(); 
         s2.PrintName();
+        s1.printInfo(s1.name);
+        s1.printInfo(s1.age);
 
     }
 
