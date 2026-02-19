@@ -2,6 +2,11 @@ package com.example;
 
 abstract class animal {
     abstract void walk();
+    animal() {
+        System.out.println("animal is created- constructor");
+    }
+    public void eat() {
+        System.out.println("animal is eating");
     }
 
 class horse extends animal {
@@ -21,6 +26,8 @@ public class abs {
 
         chicken c1 = new chicken();
         c1.walk();
+        h1.eat();
+        c1.eat();
     }
     
 }
